@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Sofisticado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Bem-vindo</h1>
+      <p>Este é um site sofisticado com interação ao passar o mouse.</p>
+      <a href="#">Explorar</a>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("mousemove", (e) => {
+      const x = e.clientX / window.innerWidth - 0.5;
+      const y = e.clientY / window.innerHeight - 0.5;
+      const card = document.querySelector('.card');
+      card.style.transform = `rotateY(${x * 30}deg) rotateX(${-y * 30}deg)`;
+  
+      document.body.style.setProperty('--x', e.clientX + 'px');
+      document.body.style.setProperty('--y', e.clientY + 'px');
+    });
+  </script>
+</body>
+</html>
