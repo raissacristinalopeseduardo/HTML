@@ -21,38 +21,32 @@ body{
     transform: translate(-50%, -50%);
     width: 30vw;
     
-    
-
 }
-
-
-
-.btn{
-    background-color: #0c0d0e;
+.container button{
+     background-color: #0c0d0e;
     color: white;
     border-radius: 20px;
     width: 20vh;
     height: 5vh;
     font-size: 16px;
     font-weight: bold;
-    margin-left: 200px;
-    
   
-    
+
 }
+
+
 .line{
     margin-top: 10px ;
     margin-bottom: 10px;
-    width: 50vw;
-    height: 1px;
+    border: 1px solid #000;
     background-color: rgb(22, 21, 21);
 }
+
 .q1{
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
    
-    
 }
 
 .q2{
@@ -62,10 +56,19 @@ body{
     
 }
 
+
 .q3{
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
 
     
+}
+
+.respostas{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
 }
