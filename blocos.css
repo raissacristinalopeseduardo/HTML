@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.blocos {
+  width: 250px;
+  height: 350px;
+  border-radius: 45px;
+  background-color: #af4c4cd3;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 10px rgb(245, 3, 3);
+
+ }
