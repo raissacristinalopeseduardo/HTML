@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal combus.css">
+    <title>Calculadora de Combustível</title>
+</head>
+<body>
+
+    <header class="barra">
+        <img src="Captura de tela 2025-06-18 094854.png" alt="">
+
+        <div class="text1">
+            <h3>Os Melhores</h3>
+            <p>Créditos e mais</p>
+        </div>
+
+        <div class="text2">
+            <h3>Guias completos</h3>
+            <p>Finanças e mais</p>
+        </div>
+
+        <div class="text3">
+            <h3>Ferramentas</h3>
+            <p>Compare e simule</p>
+        </div>
+
+      
+    </header>
+
+    <!-- Tela 1 -->
+    <div class="calcular mostrar" id="tela1">
+        <h1>Calculadora de Combustível</h1>
+
+        <form id="Calculadora">
+            <label>Distância (km):</label>
+            <input type="number" id="distance" required><br><br>
+
+            <label>Preço do Combustível (R$/litro):</label>
+            <input type="number" id="fuel-price" required><br><br>
+
+            <label>Consumo do Veículo (km/litro):</label>
+            <input type="number" id="fuel-consumption" required><br><br>
+
+            <button type="button" onclick="mudarTela()" class="btn">Calcular</button>
+            <button type="reset" class="btn2">Limpar</button>
+        </form>
+    </div>
+
+    <!-- Tela 2 (Resultado) -->
+    <div class="resultado2 escondido" id="tela2">
+        <h1>Resultado</h1>
+
+        <table border="1">
+            <tr>
+                <th>pLitros Gastos</th>
+                <th>Custo Total (R$)</th>
+            </tr>
+            <tr>
+                <td id="litros"></td>
+                <td id="custo"></td>
+            </tr>
+        </table>
+
+        <button onclick="voltar()" class="btn">Voltar</button>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="text">
+        <h2>Como utilizar a calculadora de combustível</h2>
+        <p>Para saber <i>como se calcula o gasto de gasolina</i> é muito simples. Confira o passo a passo:</p>
+        <ol>
+            <li>Coloque a distância que será percorrida em km.</li>
+            <li>Informe qual o consumo médio do veículo.</li>
+            <li>Agora informe qual o valor do litro de combustível que você pagou.</li>
+            <li>Clique em “Calcular”.</li>
+            <li>Você receberá o cálculo do consumo de combustível que será gasto.</li>
+        </ol>
+    </div>
+
+    <script src="cal.combus.js"></script>
+
+</body>
+</html>
